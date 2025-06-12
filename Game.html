@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Memory Duel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Atmiņas spēle ar metamo kauliņu</h1>
+  <div class="Box">
+        <div class="controls">
+                    <button class="Sākt-btn" onclick="startNewGame()">Sākt jaunu spēli</button>
+                    <h2 id="dice-result">Kauliņa rezultāts: -</h2>
+                <div class="Button-Pos">
+                    <button id="player1-btn" onclick="rollDice(1)">1 spēlētājs met</button>
+                    <div id="scoreboard" style="font-size: 60px; font-weight: bold; min-width: 100px; text-align: center;">
+                        0 : 0
+                    </div>
+                    <button id="player2-btn" onclick="rollDice(2)" disabled>2 spēlētājs met</button>
+                </div>
+                 <p id="status">Spēli uzsākt!</p>
+        </div>
+    </div>
+    <h1>Spēles lauks</h1>
+    <div class="Board-Box">
+  <div id="game-board"></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

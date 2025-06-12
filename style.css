@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
+  background-repeat: repeat;
+  background-color: #ffffff;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.Button-Pos {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.Sākt-btn {
+  background-color: #1e2a35; 
+  color: white;             
+  font-size: 18px;             
+  padding: 12px 24px;
+  border: none;                
+  border-radius: 8px;        
+  cursor: pointer;               /
+}
+
+.Sākt-btn:hover {
+    background-color: #21537c;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #1e2a35;
+  border: 4px solid black;
+  display: flex;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+    background-color: #2b4c6b;
+}
+
+.card.revealed {
+  background: #2b7535;
+  pointer-events: none;
+}
+
+.Box {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f4ff;
+  border:   4px solid #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Board-Box {
+max-width: 600px;
+height: 400px;
+margin: 20px auto;
+padding: 20px;
+background-color: #633e3e;
+border: 4px solid #000000;
+border-radius: 12px;
+}
+
+#status {
+  font-size: 24px;  
+  font-weight: bolder;   
+  color: #000000;       
+  margin-top: 10px;     
+}
+
+#player1-btn, #player2-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: #633e3e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#player1-btn:hover, #player2-btn:hover {
+  background-color: #b62222;
+}
